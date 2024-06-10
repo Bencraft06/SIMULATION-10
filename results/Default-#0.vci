@@ -1,0 +1,172 @@
+file 205747 1717494633                                          
+version 2
+run Default-0-20240604-09:49:51-5052
+attr configname Default
+attr datetime 20240604-09:49:51
+attr experiment Default
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network paris
+attr processid 5052
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param **.debug false
+param **.coreDebug false
+param *.playgroundSizeX 4953m
+param *.playgroundSizeY 2000m
+param *.playgroundSizeZ 50m
+param *.annotations.draw true
+param *.obstacles.obstacles "xmldoc(\"config.xml\", \"//AnalogueModel[@type='SimpleObstacleShadowing']/obstacles\")"
+param *.manager.updateInterval 1s
+param *.manager.host "\"localhost\""
+param *.manager.port 9999
+param *.manager.moduleType "\"org.car2x.veins.nodes.Car\""
+param *.manager.moduleName "\"node\""
+param *.manager.moduleDisplayString "\"\""
+param *.manager.autoShutdown true
+param *.manager.launchConfig "xmldoc(\"paris.launchd.xml\")"
+param *.rsu[0].mobility.x 0
+param *.rsu[0].mobility.y 0
+param *.rsu[0].mobility.z 3
+param *.rsu[*].applType "\"TraCIDemoRSU11p\""
+param *.rsu[*].appl.headerLength "80 bit"
+param *.rsu[*].appl.sendBeacons false
+param *.rsu[*].appl.dataOnSch false
+param *.rsu[*].appl.beaconInterval 1s
+param *.rsu[*].appl.beaconUserPriority 7
+param *.rsu[*].appl.dataUserPriority 5
+param *.rsu[*].nic.phy80211p.antennaOffsetZ "0 m"
+param *.connectionManager.sendDirect true
+param *.connectionManager.maxInterfDist 2600m
+param *.connectionManager.drawMaxIntfDist false
+param *.**.nic.mac1609_4.useServiceChannel false
+param *.**.nic.mac1609_4.txPower 20mW
+param *.**.nic.mac1609_4.bitrate 6Mbps
+param *.**.nic.phy80211p.minPowerLevel -110dBm
+param *.**.nic.phy80211p.useNoiseFloor true
+param *.**.nic.phy80211p.noiseFloor -98dBm
+param *.**.nic.phy80211p.decider "xmldoc(\"config.xml\")"
+param *.**.nic.phy80211p.analogueModels "xmldoc(\"config.xml\")"
+param *.**.nic.phy80211p.usePropagationDelay true
+param *.**.nic.phy80211p.antenna "xmldoc(\"antenna.xml\", \"/root/Antenna[@id='monopole']\")"
+param *.node[*].nic.phy80211p.antennaOffsetY "0 m"
+param *.node[*].nic.phy80211p.antennaOffsetZ "1.895 m"
+param *.node[*].applType "\"MyVeinsApp\""
+param *.node[*].appl.headerLength "80 bit"
+param *.node[*].appl.sendBeacons false
+param *.node[*].appl.dataOnSch false
+param *.node[*].appl.beaconInterval 1s
+param *.node[*].veinsmobility.x 0
+param *.node[*].veinsmobility.y 0
+param *.node[*].veinsmobility.z 0
+param *.node[*].veinsmobility.setHostSpeed false
+param *.node[*0].veinsmobility.accidentCount 1
+param *.node[*0].veinsmobility.accidentStart 73s
+param *.node[*0].veinsmobility.accidentDuration 50s
+
+vector 0 paris.node[0].veinsmobility posx ETV
+vector 1 paris.node[0].veinsmobility posy ETV
+vector 2 paris.node[1].veinsmobility posx ETV
+vector 3 paris.node[1].veinsmobility posy ETV
+vector 4 paris.node[2].veinsmobility posx ETV
+vector 5 paris.node[2].veinsmobility posy ETV
+vector 6 paris.node[3].veinsmobility posx ETV
+vector 7 paris.node[3].veinsmobility posy ETV
+vector 8 paris.node[4].veinsmobility posx ETV
+vector 9 paris.node[4].veinsmobility posy ETV
+vector 10 paris.node[5].veinsmobility posx ETV
+vector 11 paris.node[5].veinsmobility posy ETV
+vector 12 paris.node[6].veinsmobility posx ETV
+vector 13 paris.node[6].veinsmobility posy ETV
+vector 14 paris.node[7].veinsmobility posx ETV
+vector 15 paris.node[7].veinsmobility posy ETV
+vector 16 paris.node[8].veinsmobility posx ETV
+vector 17 paris.node[8].veinsmobility posy ETV
+vector 18 paris.node[9].veinsmobility posx ETV
+vector 19 paris.node[9].veinsmobility posy ETV
+vector 20 paris.node[0].veinsmobility speed ETV
+vector 21 paris.node[1].veinsmobility speed ETV
+vector 22 paris.node[2].veinsmobility speed ETV
+vector 23 paris.node[3].veinsmobility speed ETV
+vector 24 paris.node[4].veinsmobility speed ETV
+vector 25 paris.node[5].veinsmobility speed ETV
+vector 26 paris.node[6].veinsmobility speed ETV
+vector 27 paris.node[7].veinsmobility speed ETV
+vector 28 paris.node[8].veinsmobility speed ETV
+vector 29 paris.node[9].veinsmobility speed ETV
+vector 30 paris.node[0].veinsmobility acceleration ETV
+vector 31 paris.node[0].veinsmobility co2emission ETV
+vector 32 paris.node[1].veinsmobility acceleration ETV
+vector 33 paris.node[1].veinsmobility co2emission ETV
+vector 34 paris.node[2].veinsmobility acceleration ETV
+vector 35 paris.node[2].veinsmobility co2emission ETV
+vector 36 paris.node[3].veinsmobility acceleration ETV
+vector 37 paris.node[3].veinsmobility co2emission ETV
+vector 38 paris.node[4].veinsmobility acceleration ETV
+vector 39 paris.node[4].veinsmobility co2emission ETV
+vector 40 paris.node[5].veinsmobility acceleration ETV
+vector 41 paris.node[5].veinsmobility co2emission ETV
+vector 42 paris.node[6].veinsmobility acceleration ETV
+vector 43 paris.node[6].veinsmobility co2emission ETV
+vector 44 paris.node[7].veinsmobility acceleration ETV
+vector 45 paris.node[7].veinsmobility co2emission ETV
+vector 46 paris.node[8].veinsmobility acceleration ETV
+vector 47 paris.node[8].veinsmobility co2emission ETV
+vector 48 paris.node[9].veinsmobility acceleration ETV
+vector 49 paris.node[9].veinsmobility co2emission ETV
+41	5145 1111 4 50 3 49 47 0.973 6.6561908451735 104.28306253566 331.74487182494
+40	6256 1253 4 50 3 49 47 -3.3753079657705 2.4314590713242 5.7658930027099 52.189601462991
+25	7509 1173 3 50 2 49 48 3.820885023086 9.6278731342557 436.04744847486 4030.5491426484
+11	8682 1202 2 50 1 49 49 1306.1978594193 1441.6046235388 67191.879961132 92213309.111264
+10	9884 1203 2 50 1 49 49 4008.1051906184 4205.4417397058 202402.69261875 836191052.46859
+45	11087 2902 4 143 3 140 138 0.973 4.6123624765714 179.43152030397 268.27938604844
+44	13989 2897 4 143 3 140 138 -4.4576063890349 2.4887110232154 2.1769615771932 41.293400549524
+27	16886 2715 3 143 2 140 139 0 6.3677603940292 487.43048429697 3033.1336763335
+15	19601 3557 2 143 1 140 140 351.3585756471 426.0787125714 56283.976821909 22714955.713491
+14	23158 3549 2 143 1 140 140 3005.3612342214 3145.2261125417 435429.02449408 1354547644.9272
+39	26707 4323 4 196 3 193 191 0.973 4.5994687358164 280.59797515877 487.47805497554
+38	31030 4541 4 196 3 193 191 -4.4603900169255 2.3247887876524 3.5874420045072 92.177372368765
+24	35571 4215 3 196 2 193 192 0 7.356377186079 977.39121528015 6993.6921167686
+9	39786 4792 2 196 1 193 193 735.00589891414 954.17466462708 156512.14850273 127781533.68975
+8	44578 4794 2 196 1 193 193 3680.3160748296 4300.0751958764 760235.30011337 3000179931.5172
+0	49372 4944 2 203 1 200 200 3764.2851503443 4667.1101155482 826817.34059652 3428210155.8549
+1	54316 4967 2 203 1 200 200 577.48318294388 820.63984215761 136760.08012383 94165057.986538
+2	59283 4967 2 203 1 200 200 3437.3778499598 3881.9998943296 746443.14276731 2789134080.4364
+3	64250 4973 2 203 1 200 200 306.03833932537 1124.3477475012 108221.68175152 72359588.749015
+4	69223 4920 2 203 1 200 200 3480.1160900522 3855.5976875449 733199.67144469 2690518031.2276
+5	74143 4978 2 203 1 200 200 860.15908534891 943.56398025865 179506.48295869 161245344.26156
+6	79121 4922 2 203 1 200 200 2874.351201773 3610.7929098065 648877.26480672 2115456232.6621
+7	84043 4983 2 203 1 200 200 832.60080359759 1059.6485348357 180692.13179316 163903075.99564
+12	89026 5169 2 203 1 200 200 2881.1626007153 3352.3776557955 608945.13761752 1858033507.3641
+13	94195 5101 2 203 1 200 200 664.68314666119 971.23872111445 175395.8871322 154708423.69242
+16	99296 5171 2 203 1 200 200 4379.9659488719 4591.7238463891 905610.92194608 4101299456.5784
+17	104467 5135 2 203 1 200 200 745.27964984979 1141.6555069484 182298.67301005 170619304.11038
+18	109602 5174 2 203 1 200 200 3413.5904624357 3882.1021642962 727538.95030052 2653054592.0359
+19	114776 5150 2 203 1 200 200 542.39723469289 1018.5622016054 137160.73177478 97583806.909816
+20	119926 3908 3 203 2 200 199 0 9.2959223277877 951.05963481986 8518.5890259169
+21	123834 4561 3 203 2 200 199 0 8.7320315685712 1191.5251278383 9613.0492443195
+22	128395 3399 3 203 2 200 199 0 8.5754656766107 530.60245851418 4209.6151428999
+23	131794 4032 3 203 2 200 199 0 14.089389982198 993.32149338198 8900.5086994493
+26	135826 4031 3 203 2 200 199 0 7.8737738451491 880.38704782568 6713.8988273367
+28	139857 3675 3 203 2 200 199 0 8.7807285449214 722.98154235441 6002.228509892
+29	143532 3916 3 203 2 200 199 0 10.561018437939 1043.7188873128 10405.566632473
+30	147448 4152 4 203 3 200 198 -4.4811784291579 2.3236466426628 5.2185285151577 120.08884998887
+31	151600 4190 4 203 3 200 198 0.973 6.4834540119455 297.72538698007 600.24737877681
+32	155790 4901 4 203 3 200 198 -4.4925397314621 2.383871454062 2.0596379856284 191.6799131632
+33	160691 4572 4 203 3 200 198 0.973 6.0383744794468 330.40686247771 713.0424653704
+34	165263 3549 4 203 3 200 198 -4.4980149399258 2.3468432307136 -3.6881792954252 188.88037220849
+35	168812 3773 4 203 3 200 198 0.973 5.6786906629806 273.3507094771 537.13910070873
+36	172585 4277 4 203 3 200 198 -4.4688507216921 2.3250902798922 4.8056711128638 188.46715307049
+37	176862 4192 4 203 3 200 198 0.973 8.0760436664873 333.15854967366 906.70105198358
+42	181054 4292 4 203 3 200 198 -4.5 2.3117780959799 3.9628368808941 99.948884941505
+43	185346 4259 4 203 3 200 198 0.973 4.9502116157157 283.69096906417 502.27035203681
+46	189605 3882 4 203 3 200 198 -4.4961620055841 2.292356377803 4.7677979636695 175.26124480597
+47	193487 3990 4 203 3 200 198 0.973 5.5955588975692 290.41617789438 593.1903005091
+48	197477 4147 4 203 3 200 198 -4.5 2.2814648282292 -3.9471531889334 225.20425875153
+49	201624 4122 4 203 3 200 198 0.973 6.734256171829 329.28781915816 828.33980086026
+
